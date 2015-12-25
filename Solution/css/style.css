@@ -1,0 +1,138 @@
+
+body{
+background-color: #CD950C;  
+ 
+}
+.radio-tabs{
+position: relative; 
+
+display: inline-block;
+width: 490px;
+height: 300px;  
+margin-top:15px;
+}
+
+.tab{
+float:left;
+}
+
+label{
+border-radius: 10px 10px 0 0;
+background: #696969;  
+color: #fff;
+border: 1px solid #ccc; 
+padding: 10px;
+margin-left: -1px;  
+position: relative;
+left: 10px;
+top: -1px;  
+cursor:pointer;
+}
+
+input[type=radio]{
+display:none;  
+}
+
+.content{
+border-radius: 10px;
+background: #ccc;
+padding: 10px;
+position: absolute;
+display: none;
+width: 470px;
+height: 250px;
+top: 27px;  
+right: 0;
+bottom: 0;
+left: 0; 
+  
+}
+
+[type=radio]:checked ~ label {
+    color: #333;
+		background: #ccc;
+	  z-index: 2;
+    transition: all 0.3s ease 0.3s, z-index 0s 0.3s;
+}
+
+[type=radio]:checked ~ label ~ .content {
+			display: block;
+ 
+}
+
+.control-menu{
+border-radius: 10px;
+background: #ccc;
+float: right;  
+width: 493px;
+height: 200px;
+
+
+  
+}
+.fon1{
+border-radius: 0 10px;
+display:inline-block;
+width: 100px;
+height:150px; 
+vertical-align: top;
+padding:10px;  
+background: #696969;  
+}
+
+button {
+color: rgb(209,209,217);
+border-radius: 3px;
+font-size: 90%;
+font-weight: 700;
+text-decoration: none;
+text-shadow: 0 -1px 2px rgba(0,0,0,.2);
+outline: none;
+background: linear-gradient(rgb(110,112,120), rgb(81,81,86)) rgb(110,112,120);
+box-shadow:
+   0 1px rgba(255,255,255,.2) inset,
+   0 3px 5px rgba(0,1,6,.5),
+   0 0 1px 1px rgba(0,1,6,.2);
+ cursor:pointer; 
+}
+
+button:hover:not(:active){
+background: linear-gradient(rgb(126,126,134), rgb(70,71,76)) rgb(126,126,134);  
+  
+}
+
+button:hover:active{
+top: 1px;
+background: linear-gradient(rgb(76,77,82), rgb(56,57,62)) rgb(76,77,82);
+box-shadow:
+   0 0 1px rgba(0,0,0,.5) inset,
+   0 2px 3px rgba(0,0,0,.5) inset,
+   0 1px 1px rgba(255,255,255,.1);  
+  
+}
+
+.btn1Text, 
+.btn1Text2,
+.btn1Text3,
+.btn1Text4,
+.btn1Text5,
+.btn1Text6,
+.btn1Text7,
+.btn1Text8{
+outline: none;
+background: #FDF5E6;
+border: 1px solid #cccdcf;
+box-shadow: 0 2px 3px #e8e8e8 inset;
+color: #343434;
+font-size: 15px;
+font-family: Calibri; 
+display: block; 
+width: 100px;
+margin-bottom:2px;
+  
+}
+
+.answered-line{
+padding: 5px;
+font-family: Calibri; 
+}
